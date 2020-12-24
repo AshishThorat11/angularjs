@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src= "calculator.js"></script>
+ 
+<div ng-app="CalculatorApp" ng-controller="CalculatorController">
+	<table>
+  <tr><td><label>Enter first no:</label></td><td><input type="number" ng-model="a"></td></tr>
+  <tr><td><label>Enter second no:</label></td><td><input type="number" ng-model="b"></td></tr>
+  <tr><td><select ng-model="operator">
+        <option>+</option>
+        <option>*</option>
+        <option>-</option>
+        <option>/</option>
+     </select></td>
+  <td>{{ result() }}</td></tr>
+ </div>
+
+</body>
+</html>
